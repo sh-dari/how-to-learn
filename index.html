@@ -6,7 +6,7 @@
   <meta name="description" content="Первая работа по курсу веб-разработчик">
   <meta name="keywords" content="html, css">
   <meta name="author" content="Дарья Шипилова">
-  <link rel="stylesheet" href="pages/index.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
     </header>
     <main class="content">
       <section class="description">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
@@ -41,7 +41,7 @@
               Практикуме.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
@@ -87,17 +87,17 @@
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
-        <div class="video__iframes">
-          <div class="video__iframe">
-            <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" style="border: 0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="video__iframe">
-            <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" style="border: 0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
+        <ul class="video__iframes">
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+          </li>
+        </ul>
       </section>
       <section class="oakley">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
@@ -109,7 +109,7 @@
               трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
@@ -160,13 +160,13 @@
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">
+          <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения
             миллионов студентов по всему миру. Книгу «Весь мир — школа»
             нужно прочитать всем, кто занимается образованием — так
             учащиеся повсюду смогут получить навыки и знания, которые
             приносят успех в школе, карьере и жизни.
-          </p>
+          </blockquote>
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
@@ -225,20 +225,28 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
-        <div class="resources__logo-zone">
-          <a href="#" class="resources__link" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="Лого Арзамас">
-          </a>
-          <a href="#" class="resources__link" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-n1.svg" alt="Лого Н-1">
-          </a>
-          <a href="#" class="resources__link" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-strelka.svg" alt="Лого Стрелка">
-          </a>
-          <a href="#" class="resources__link" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-polka.svg" alt="Лого Полка">
-          </a>
-        </div>
+        <ul class="resources__logo-zone">
+          <li>
+            <a href="#" class="resources__link" target="_blank">
+              <img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="Лого Арзамас">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="resources__link" target="_blank">
+              <img class="resources__logo" src="images/logo/resources-n1.svg" alt="Лого Н-1">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="resources__link" target="_blank">
+              <img class="resources__logo" src="images/logo/resources-strelka.svg" alt="Лого Стрелка">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="resources__link" target="_blank">
+              <img class="resources__logo" src="images/logo/resources-polka.svg" alt="Лого Полка">
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
